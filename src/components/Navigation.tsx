@@ -37,7 +37,7 @@ export const Navigation = () => {
               src={logo} 
               alt="Bllectual" 
               className={`h-10 w-auto transition-all duration-300 ${
-                isScrolled ? "filter-none" : "filter brightness-0 invert"
+                isScrolled ? "opacity-100" : "filter brightness-0 invert opacity-90"
               }`}
             />
           </div>
@@ -48,7 +48,7 @@ export const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className={`font-medium transition-colors hover:text-accent-teal ${
+                className={`font-medium transition-colors hover:text-accent ${
                   isScrolled ? "text-foreground" : "text-white"
                 }`}
               >
@@ -88,7 +88,7 @@ export const Navigation = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="block font-medium text-foreground hover:text-accent-teal transition-colors"
+                  className="block font-medium text-foreground hover:text-accent transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
