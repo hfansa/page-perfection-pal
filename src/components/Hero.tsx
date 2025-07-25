@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Users, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-business.jpg";
-import logo from "/lovable-uploads/764a30d4-0812-4d75-a9f3-381183df7c5c.png";
+import logo from "@/assets/bllectual-logo.png";
 
 export const Hero = () => {
   return (
@@ -30,14 +30,14 @@ export const Hero = () => {
           <img 
             src={logo} 
             alt="Bllectual" 
-            className="h-16 w-auto"
+            className="h-16 w-auto filter brightness-0 invert"
           />
         </div>
 
         {/* Main heading */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Your{" "}
-          <span className="text-primary-glow">
+          <span className="bg-gradient-accent bg-clip-text text-transparent">
             Business Solutions
           </span>{" "}
           Partner
@@ -78,7 +78,7 @@ export const Hero = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="text-lg px-8 py-4 h-auto border-white/50 text-white hover:bg-white/20 hover:text-white"
+            className="text-lg px-8 py-4 h-auto border-white/30 text-white hover:bg-white/10"
           >
             Contact Us Today
           </Button>
