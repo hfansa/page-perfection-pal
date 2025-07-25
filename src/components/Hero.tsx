@@ -2,17 +2,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Users, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-business.jpg";
 import logo from "@/assets/bllectual-logo.png";
-
 export const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Professional business environment" 
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="Professional business environment" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary-light/85"></div>
       </div>
       
@@ -27,17 +21,13 @@ export const Hero = () => {
       <div className="relative z-20 container mx-auto px-6 text-center text-white">
         {/* Logo */}
         <div className="mb-8 flex justify-center">
-          <img 
-            src={logo} 
-            alt="Bllectual" 
-            className="h-16 w-auto filter brightness-0 invert"
-          />
+          <img src={logo} alt="Bllectual" className="h-16 w-auto filter brightness-0 invert" />
         </div>
 
         {/* Main heading */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-gray-900">
           Your{" "}
-          <span className="bg-gradient-accent bg-clip-text text-transparent">
+          <span className="bg-gradient-accent bg-clip-text text-slate-300">
             Business Solutions
           </span>{" "}
           Partner
@@ -67,19 +57,11 @@ export const Hero = () => {
 
         {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
-            variant="accent" 
-            size="lg"
-            className="text-lg px-8 py-4 h-auto"
-          >
+          <Button variant="accent" size="lg" className="text-lg px-8 py-4 h-auto">
             Explore Solutions
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="text-lg px-8 py-4 h-auto border-white/30 text-white hover:bg-white/10"
-          >
+          <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-white/30 hover:bg-white/10 text-slate-900">
             Contact Us Today
           </Button>
         </div>
@@ -107,6 +89,5 @@ export const Hero = () => {
           <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-bounce"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
